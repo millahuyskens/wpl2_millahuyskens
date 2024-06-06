@@ -388,52 +388,47 @@ color: papayawhip;
     text-align: center;
     font-size: 25px;
 }
-
-
-.slider {
+.carousel {
     position: relative;
-    width: 800px;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
     overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
 }
 
-.slides {
-    padding-left: 200px;
+.carousel-inner {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    align-items: center;
+    transition: transform 0.5s ease;
 }
 
-.slide {
+.carousel-item {
     min-width: 100%;
     box-sizing: border-box;
 }
 
-.slide img {
-    width: 50%;
+.carousel-item img {
+    width: 100%;
     display: block;
-    align-items: center;
+    border-radius: 10px;
 }
 
-.prev, .next {
+.carousel-control {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
-    z-index: 10;
 }
 
 .prev {
-    left: 100px;
+    left: 10px;
 }
 
 .next {
-    right:120px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    right: 10px;
 }
